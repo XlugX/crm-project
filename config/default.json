@@ -1,0 +1,5 @@
+{
+  "port": 5000,
+  "mongoUri": "mongodb+srv://velesov:wvoxJXiS4wXUqfWy@cluster0.bsv5s.mongodb.net/mern?retryWrites=true&w=majority",
+
+}

@@ -1,0 +1,37 @@
+.wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F4F4;
+}
+
+.form {
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-width: 240px;
+    border-radius: 12px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.field {
+    margin-bottom: 10px;
+    flex: 1;
+    display: flex;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}

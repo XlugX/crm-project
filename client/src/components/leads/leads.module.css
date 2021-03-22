@@ -1,0 +1,51 @@
+.board {
+    display: flex;
+}
+
+.list {
+    display: flex;
+    flex: 1;
+    background: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 0 8px;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card {
+    border-radius: 4px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.remove {
+    margin-top: 8px;
+    cursor: pointer;
+    color: #e28363;
+}
+
+.lead {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.label {
+    margin-bottom: 8px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}

@@ -1,0 +1,12 @@
+.input {
+    display: flex;
+    padding: 10px;
+    flex-grow: 1;
+    outline: none !important;
+    border-radius: 12px;
+    border: 1px solid #EEEEEE;
+}
+
+.input:focus {
+    border-color: #E28363;
+}
