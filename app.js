@@ -1,10 +1,11 @@
 const express = require('express');
 const { connect } = require('mongoose');
+const config = require('config');
 const router = require('./routes/api.routes');
 const routerAuth = require('./routes/api-auth.routes');
 const app = express();
 
-const PORT = process.env.PORT || 5000;
+const PORT = config.get('port') || 5000;
 
 app.use(express.json({ extended: true }))
 app.use('/api', router);
@@ -12,7 +13,7 @@ app.use('/api/auth', routerAuth);
 
 async function start() {
     try {
-        await connect('mongodb+srv://xlugx:Sanjmaster123@cluster0.folw9.mongodb.net/mern?retryWrites=true&w=majority', {
+        await connect(config.get('mongoUri'), {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             useCreateIndex: true
